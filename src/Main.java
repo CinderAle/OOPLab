@@ -1,5 +1,7 @@
 public class Main {
-
+    //Classes represent different types of transport, trailer and engine
+    //Each transport class except trailer contains a field of the engine class
+    //Ground transport classes contain a field of the trailer class
     class Engine{
         private int cylinders, horsepower, torque;
         private String manufacturer;
@@ -50,8 +52,5 @@ public class Main {
     class Truck extends GroundTransport {
         private Trailer trailer;
         private String trailerConnection;
-    }
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
     }
 }
