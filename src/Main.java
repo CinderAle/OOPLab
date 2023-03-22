@@ -8,8 +8,8 @@ public class Main {
     }
 
     class Transport {
-        protected String brand, model, color, interior, ownerName, modifications, specifications;
-        protected int seats, manufactureYear, mileage, mass;
+        protected String brand, model, color, interior, ownerName, description;
+        protected int seats, manufactureYear, mileage;
     }
 
     class AirTransport extends Transport {
@@ -28,7 +28,7 @@ public class Main {
     }
 
     class SeaTransport extends Transport {
-        protected int volumeDisplacement, massDisplacement, normalDisplacement, fullDisplacement;
+        protected int volumeDisplacement, massDisplacement, normalDisplacement;
         protected Engine engine;
     }
 
@@ -44,8 +44,8 @@ public class Main {
     }
 
     class PassengerCar extends GroundTransport {
-        private String bodyType, rimsType, tyresType, assembly, equipment;
-        private int rimsRadius, acceleration;
+        private String bodyType, rimsType, assembly, equipment;
+        private int rimsRadius;
         private Trailer trailer;
     }
 
